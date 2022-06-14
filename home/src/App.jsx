@@ -7,7 +7,7 @@ import "./index.scss";
 
 const App = () => (
   <div className="text-3xl mx-auto max-w-6xl">
-    <Header />
+    <Header app={ {name:"home"}} />
     <div className="py-10">
       Home page content
     </div>
