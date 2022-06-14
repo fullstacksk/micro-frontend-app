@@ -12,10 +12,10 @@ const App = () => {
     {showHeader && <Suspense fallback={<div>Loading...</div>}>
       <Header />
     </Suspense>}
-      <button
+      {!showHeader && <button
         className="p-5 bg-green-500 text-white"
         onClick={()=> setShowHeader(!showHeader)}
-      >Show the Header</button>
+      >Show the Header</button>}
     <div className="py-10">
       PDP page content
     </div>
